@@ -3,4 +3,6 @@ PIP-instalador de dependencias de python
 
 
 
+Instalar el driver para el puerto COM del Galileo y el Minicom para establecer los parametros de comunicación.
+
 
