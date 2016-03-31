@@ -5,4 +5,17 @@ PIP-instalador de dependencias de python
 
 Instalar el driver para el puerto COM del Galileo y el Minicom para establecer los parametros de comunicación.
 
+ ls /dev/cu.*   %para ver si aparece el usb
+
+para entrar al Galileo escribir minicom. El minicom debe tener la dirección correcta del puerto serie que deseamos conectar. 
+Una vez conectado en el Galileo 
+
+desde el root del Galileo, 
+
+ifconfig wlan0 up  % Activa la red W
+
+iwlist wlan0 scan  % Busca redes W
+
+iwconfig wlan0 essid ESSID key CONTRASEÑA  %se conecta a las redes
+iwconfig wlan0 essid ESSID key s:CONTRASEÑA
 
