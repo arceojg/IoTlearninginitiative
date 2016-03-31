@@ -57,6 +57,9 @@ Agent RequestInput wifi_e84e06099fef_504f53414441204445204c41204d4f4e454441_mana
   Passphrase = [ Type=psk, Requirement=mandatory, Alternates=[ WPS ] ]
   WPS = [ Type=wpspin, Requirement=alternate ]
 Passphrase? 6912345678
+quit
+
+
 
 
 ifconfig wlan0 up  % Activa la red W
