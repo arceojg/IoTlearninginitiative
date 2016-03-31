@@ -33,8 +33,30 @@ ifconfig wlan0 up, en mi caso wlp0s20f3u1
 ifconfig wlp0s20f3u1 up
 
 iwlist wlp0s20f3u1 scan 
-iwconfig wlan0 essid iotlab key s:Training.4
+iwconfig wlp0s20f3u1 essid iotlab key s:Training.4
 
+
+
+
+Activar la red inalambrica si falla iwconfig%%%
+
+connmanctl
+enable wifi
+scan wifi
+services
+agent on
+
+SEGUIR CON: SERVICES (LO QUE SIGUE ES UN EJEMPLO, PARA ESTABLECER LA RED DESEADA.USAR CONNECT)
+connmanctl> services
+    POSADA DE LA MONEDA  wifi_e84e06099fef_504f53414441204445204c41204d4f4e454441_managed_psk
+    Mision Zacatecas     wifi_e84e06099fef_4d6973696f6e205a6163617465636173_managed_none
+    Cineteca             wifi_e84e06099fef_43696e6574656361_managed_psk
+    Sala_Prensa          wifi_e84e06099fef_53616c615f5072656e7361_managed_psk
+aged_psktl> connect wifi_e84e06099fef_504f53414441204445204c41204d4f4e454441_man
+Agent RequestInput wifi_e84e06099fef_504f53414441204445204c41204d4f4e454441_managed_psk
+  Passphrase = [ Type=psk, Requirement=mandatory, Alternates=[ WPS ] ]
+  WPS = [ Type=wpspin, Requirement=alternate ]
+Passphrase? 6912345678
 
 
 ifconfig wlan0 up  % Activa la red W
