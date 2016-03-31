@@ -38,7 +38,7 @@ iwconfig wlp0s20f3u1 essid iotlab key s:Training.4
 
 
 
-Activar la red inalambrica si falla iwconfig%%%
+Activar la red inalambrica ANTES QUE USAR IWCONFIG %%%
 
 connmanctl
 enable wifi
