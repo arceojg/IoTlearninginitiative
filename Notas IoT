@@ -18,6 +18,7 @@ Para montar una imagen de la USB a micro SD
 
 
 Instalar el driver para el puerto COM del Galileo y el Minicom para establecer los parametros de comunicación.
+http://pbxbook.com/other/mac-tty.html
 
  ls /dev/cu.*   %para ver si aparece el usb en listado de dispositivos
 
